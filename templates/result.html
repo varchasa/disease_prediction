@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+	<div class="head">
+		<h2 align="center">Disease Detection</h2>
+	</div>
+	<hr width="100%" color="black" size="5px">
+	<br>
+<h2><u><b><em>"Health is Like Money,we never have a true idea of its value until we lose it ."</em></b></u></h2>
+<br>
+
+	<h1 style="color:blue;font-size:20;text-align: center"><b>Results for Comment</b></h1>
+	
+	<div class="results">
+
+
+		
+	{% if prediction == 'C'%}
+	<h2 style="color:red;">Cancer</h2>
+	<p>for more details  <a href="cancer.htm"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'T'%}
+	<h2 style="color:blue;">Tuberculosis</h2>
+	<p>for more details  <a href="tuberculosis.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'Ch'%}
+	<h2 style="color:blue">Chikunguniya</h2>
+	<p>for more details   <a href="chikankuniaya.html">  <button>Click Here</button></a></p>
+
+	{% elif prediction == 'S'%}
+	<h2 style="color:blue">Stroke</h2>
+	<p>for more details  <a href="stroke.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'L'%}
+	<h2 style="color:blue">Leukemia</h2>
+	<p>for more details  <a href="lukemia.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'D'%}
+	<h2 style="color:blue">Diarrhea</h2>
+	<p>for more details  <a href="diarrhea.html/"> <button>Click Here</button></a></p>
+
+
+	{% elif prediction == 'U'%}
+	<h2 style="color:blue">Urinary infection</h2>
+	<p>for more details  <a href="urinary infection.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'K'%}
+	<h2 style="color:blue">Kidney stones</h2>
+	<p>for more details  <a href="kidney stone.html"> <button>Click Here</button></a></p>
+
+
+	{% elif prediction == 'F'%}
+	<h2 style="color:blue">Fever</h2>
+	<p>for more details  <a href="fever.html"> <button>Click Here</button></a></p>
+	
+	{% elif prediction == 'Cr'%}
+	<h2 style="color:blue">Crohn Disease</h2>
+	<p>for more details  <a href="cancer.htm"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'F'%}
+	<h2 style="color:blue">Fatigue</h2>
+	<p>for more details  <a href="fatigue.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'W'%}
+	<h2 style="color:blue">Weight loss</h2>
+	<p>for more details  <a href="weight loss.html"> <button>Click Here</button></a></p>
+	
+	{% elif prediction == 'Cn'%}
+	<h2 style="color:blue">Constipation</h2>
+	<p>for more details  <a href="constipation.html"> <button>Click Here</button></a></p>
+
+	{% elif prediction == 'De'%}
+	<h2 style="color:blue">Dengue Fever</h2>
+	<p>for more details  <a href="dengue fever.html"> <button>Click Here</button></a></p>
+	
+	{%else%}
+	<h2 style="color:red">invalid input</h2>
+	<p>for more details  <a href="cancer.htm"></a></p>
+
+	{% endif %}
+
+	</div>
+
+</body>
+</html>

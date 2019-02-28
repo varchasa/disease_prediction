@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	
+
+	
+</head>
+<body  style="background-image: url('static/img/mdicine 5.jpg')">
+<div class="head">
+		<h2 align="center">Disease Detection</h2>
+	</div>
+	<hr width="100%" color="black" size="5px">
+	<br>
+<h2 align="center"><u><b><em>"Health is Like Money,we never have a true idea of its value until we lose it ."</em></b></u></h2>
+<br>
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict') }}" method="POST">
+			<center>
+		<h3><font size="5">Enter Your Comment Here</font></h3>
+		
+		<textarea name="comment" rows="4" cols="100" name="symp" value=symp></textarea>
+		<br>
+
+
+		<input type ="submit" class="button" value="predict"></button>
+			</center>
+	</form>
+	</div>
+</body>
+</html>
